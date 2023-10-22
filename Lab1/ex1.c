@@ -1,8 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-int main()
-{
+int main() {
     int id, amount;
     float workhours, salary;
     printf("Enter your ID:");
@@ -14,5 +13,5 @@ int main()
     salary = workhours*amount; 
     printf("\nThe ID of employee is %d", id);
     printf("\nAnd His Salary is %.2f", salary);
-    
+    return 0;
 }    
