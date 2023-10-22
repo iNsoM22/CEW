@@ -2,6 +2,7 @@
 // If both are less than 5, add one to both. Otherwise print Hello World.
 
 #include <stdio.h>
+#include <stdlib.h>
 
 int main() {
    int num1, num2;
@@ -11,12 +12,9 @@ int main() {
    scanf("%d", &num2);
    
    if(num1 > 5 && num2 > 5) printf("%d + %d = %d", num1, num2, num1 + num2);
-   
    else if(num1 > 5 || num2 > 5) printf("%d x %d = %d", num1, num2, num1 * num2);
-   
    else if(num1 < 5 && num2 < 5) printf("%d and %d", num1 + 1, num2 + 1);
-   
    else printf("Hello World");
    
-    return 0;
+   return 0;
 }
