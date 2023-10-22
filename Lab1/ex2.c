@@ -1,7 +1,6 @@
 #include<stdio.h>
 
-int main()
-{
+int main() {
     float height, width, area, perimeter;
     printf("Enter the height of rectangle: ");
     scanf("%f", &height);
@@ -11,4 +10,5 @@ int main()
     area = height*width; 
     printf("The Perimeter of Rectangle is %.2f", perimeter);
     printf("\nThe area of Rectangle is %.2f", area);
+    return 0;
 }    
