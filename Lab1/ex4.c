@@ -17,7 +17,12 @@ decimalToBinary(num) {
     char binaryVal[64];
     int i = 0;
     if (num == 0) {
-        printf("Binary: 0\n");
+        printf("Binary: 00\n");
+        return;
+    }
+    
+    if (num == 1) {
+        printf("Binary: 01\n");
         return;
     }
 
