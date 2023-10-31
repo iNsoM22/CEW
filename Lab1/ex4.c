@@ -2,18 +2,23 @@
 #include <stdlib.h>
 #include <string.h>
 
-void decimalToBinary(int num);
+void recurDecimalToBinary(int num) {
+   if(num>=1){
+    recurDecimalToBinary(num/2);
+    printf("%d", num%2);
+   }
+}
 
 int main() {
    int num;
    printf("Enter the number to convert it to binary: ");
    scanf("%d", &num);
-   decimalToBinary(num);
-
+   num > 0 ? recurDecimalToBinary(num) : printf("0");
    return 0;
 }
 
-decimalToBinary(num) {
+
+void decimalToBinary(int num) {
     char binaryVal[64];
     int i = 0;
     if (num == 0) {
