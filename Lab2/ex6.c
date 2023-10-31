@@ -25,6 +25,7 @@ int main() {
         result.inches -= 12;
         result.feet += 1;
     }
-    printf("The added distance is %d feets and %0.1f inches.", result.feet, result.inches);
+    printf("The added distance is %d feets", result.feet);
+    printf("and %0.1f.", result.inches);
 
 }
